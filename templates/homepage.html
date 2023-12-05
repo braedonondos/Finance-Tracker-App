@@ -5,4 +5,37 @@
 
 {% block body %}
 <h2>Welcome to the home page {{ username }}!</h2>
+<div class="form">
+    <h3 id="highlight_text">Highlighted Expense:</h3>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td> {{ highlightExpense.name }} </td>
+            <td> {{ highlightExpense.date }} </td>
+            <td> ${{ highlightExpense.price }} </td>
+        </tr>
+    </table>
+</div>
+<div class="form">
+    <h3>Expenses:</h3>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Price</th>
+        </tr>
+        {% for expense in expenses %}
+        <tr>
+            <td> {{ expense.name }} </td>
+            <td> {{ expense.date }} </td>
+            <td> ${{ expense.price }} </td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
 {% endblock %}
