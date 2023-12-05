@@ -28,3 +28,15 @@ After cloning the repository:
 10. Add any relevant data to this table to be used with the view expenses feature.
 11. Run the main python script main.py (python main.py) in the command line that has (Finance-Tracker-App).
 12. CTRL + click on the link where it says "Running on <link>" to open the web app
+
+# Running JUnit Test
+1. In the directory of the pom.xml file, execute the following commands in the command line:
+
+```mvn compile```
+
+```mvn test```
+
+2. If done correctly, the test should pass.
+   
+
+
