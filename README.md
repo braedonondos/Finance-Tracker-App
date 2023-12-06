@@ -22,11 +22,21 @@ After cloning the repository:
 
 5. Install [version 10.23 of PostgresSQL](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
 6. Launch the installer after it is done downloading. Set the password to **sie_final_project**. Leave the default port to be 5432.
-7. After the installation is complete, search for **psql** in the Windows search bar and launch it.
-8. The new command line should contain the first line of the following:
-![alt text](images/cmd_step_8.png "Step 8")
-9. Continue to hit Enter until you are prompted to enter the password. Enter **sie_final_project** and leave this running.
-10. Run the main python script main.py (python main.py) in the command line that has (Finance-Tracker-App).
-11. CTRL + click on the link where it says "Running on <link>" to open the web app
-12. If everything is setup correctly, you should the see the following output in the command line:  
-![alt text](images/step_12.png "Step 8")
+7. After the installation is complete, search for **pgadmin4** in the Windows search bar and launch it.
+8. If prompted for/to create a password, type **sie_final_project**.
+9. Make a new table named **expenses_user** with columns: category, price, username, date.
+10. Add any relevant data to this table to be used with the view expenses feature.
+11. Run the main python script main.py (python main.py) in the command line that has (Finance-Tracker-App).
+12. CTRL + click on the link where it says "Running on <link>" to open the web app
+
+# Running JUnit Test
+1. In the directory of the pom.xml file, execute the following commands in the command line:
+
+```mvn compile```
+
+```mvn test```
+
+2. If done correctly, the test should pass.
+   
+
+
